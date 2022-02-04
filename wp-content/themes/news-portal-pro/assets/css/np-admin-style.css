@@ -1,0 +1,402 @@
+/*=================================================
+            Basic widget design
+=================================================*/
+span.field-label {
+    background: #e6e6e6;
+    display: block;
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*=================================================
+            Switch Option
+=================================================*/
+.wiz_switch_options{
+    display: block;
+}
+.wiz_switch_options:before,
+.wiz_switch_options:after{
+    content:'.';
+    display:block;
+    overflow:hidden;
+    visibility:hidden;
+    font-size:0;
+    line-height:0;
+    width:0;
+    height:0;
+}
+.wiz_switch_options:after{
+    clear:both;
+}
+.wiz_switch_options span{
+    display: inline-block;
+    float: left;
+    padding: 4px 9px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: normal;
+    color: #555;
+    border: 1px solid #aaa;
+    text-transform: uppercase;
+    line-height: 16px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+.wiz_switch_options span:first-of-type{
+    border-radius: 2px 0 0 2px;
+    border-right: 0;
+}
+.wiz_switch_options span:last-of-type{
+    border-radius: 0 2px 2px 0;
+    border-left: 0;
+}
+.wiz_switch_options span:hover{
+    background: #fafafa;
+}
+.wiz_switch_options span.selected{
+    background: #00b7ea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #00b7ea 0%, #009ec3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b7ea), color-stop(100%,#009ec3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #00b7ea 0%,#009ec3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #00b7ea 0%,#009ec3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #00b7ea 0%,#009ec3 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #00b7ea 0%,#009ec3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
+    border-color: #0082A3;
+    color: #fff;
+}
+
+/*=================================================
+            Upload image section on widget
+=================================================*/
+.widget-content .attachment-media-view{
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+.widget-content .placeholder{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    border: 1px dashed #b4b9be;
+    box-sizing: border-box;
+    padding: 9px 0;
+    line-height: 20px;
+}
+.widget-content .actions{
+    margin-top: 8px;
+}
+/*=================================================
+            Selector section on widget
+=================================================*/
+.widget-content .selector-labels label {
+    display: inline-block;
+    padding: 10px 5px 0;
+    position: relative;
+    max-width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.widget-content .selector-labels label.selector-selected:after {
+    content: "";
+    height: 35px;
+    width: 35px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: url(../images/selected.png) no-repeat right top;
+}
+
+/*=================================================
+            Range option on widget
+=================================================*/
+
+.np-range-slider .range-input{
+    height: 12px;
+    position: relative;
+    background: #EEE;
+    border-radius: 4px;
+    margin: 0 4px 18px;
+    width: 80%;
+}
+
+.np-range-slider .range-input-selector{
+    width: 80px !important;
+    margin-right: 10px !important;
+    border-radius: 12px;
+    text-align: center;
+    height: 32px;
+}
+
+.np-range-slider .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background: #0073aa;
+}
+
+.np-range-slider .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+    left: 0;
+    border-radius: 4px;
+}
+
+.np-range-slider .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+    background: #EEE;
+    border: 2px solid #0073aa;
+    border-radius: 50%;
+    margin-left: -9px;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.np-range-slider .show-range-value {
+    border: 1px solid #989898;
+    border-radius: 5px;
+    background: #3d3d3d;
+    color: #fff;
+    float: right;
+    text-align: center;
+    margin-top: -3px; 
+}
+
+/*=================================================
+            Meta Box section
+=================================================*/
+
+#news_portal_post_meta ul.np-meta-menu-wrapper {
+  border-right: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  width: 22%;
+}
+/*.np-single-meta {
+    display: none;
+}*/
+.np-single-meta.active {
+    display: block !important;
+}
+.np-meta-tab span.dashicons {
+    margin-right: 7px;
+}
+.np-meta-menu-wrapper li {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+}
+.np-meta-menu-wrapper li:last-child {
+    border-bottom: none;
+}
+
+.np-metabox-content-wrapper .np-single-meta {
+    display: none;
+}
+
+/*.np-meta-menu-wrapper {
+    float: left;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 16%;
+    border-right: 1px solid #dcdcdc;
+}
+*/
+.np-metabox-content-wrapper {
+  box-sizing: border-box;
+  float: right;
+  margin-left: 0;
+  padding: 0;
+  width: 76%;
+}
+
+.np-meta-container {
+    border: 1px solid #e1e1e1;
+    position: relative;
+    margin: 20px 0;
+}
+
+.np-meta-menu-wrapper li.active {
+    color: #008ec2;
+}
+
+/*=================================================
+            Radio Image Control
+=================================================*/
+.np-meta-options-wrap .ui-button {
+    margin:        0;
+    border-radius: 0;
+    border:        none;
+    background:    transparent;
+}
+
+.np-meta-options-wrap .ui-button-text { padding: 0; }
+
+.np-meta-options-wrap img {
+    box-sizing: border-box;
+    max-width:  100%;
+    height:     auto;
+    padding:    1px;
+    border:     4px solid transparent;
+}
+
+.np-meta-options-wrap img:hover,
+.np-meta-options-wrap img:focus {
+    border-color: #ddd;
+}
+
+.np-meta-options-wrap .ui-state-active img {
+    border-color: #00a0d2;
+}
+
+/*=================================================
+            Post Format in metabox
+=================================================*/
+.format-input{
+    margin-top: 10px;
+}
+.format-type-field .format-label {
+    padding: 5px;
+}
+.format-input .add-img-btn {
+    border: 1px dashed #ccc;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+}
+.format-input .add-img-btn:after {
+    position: absolute;
+    content: '\f067';
+    font-family: FontAwesome;
+    font-size: 25px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+}
+.post-gallery-section .gal-img-block {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 10px;
+}
+.post-gallery-section .gal-img-block img{
+    width: 100%;
+}
+.gal-img-block .gal-img{
+    position: relative;
+}
+.gal-img-block .fig-remove{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    cursor: pointer;
+}
+.gal-img-block .fig-remove:after {
+    content: '\f00d';
+    background: #cc444d;
+    color: #fff;
+    font-size: 16px;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    line-height: 25px;
+    text-align: center;
+}
+.single-meta-wrap {
+    display: none;
+}
+
+.format-input .post-featured-video,
+.format-input .post-audio-url {
+    width: 100%;
+}
+
+/*=================================================
+            User custom profile picture
+=================================================*/
+.form-table .attachment-media-view {
+    width: 230px;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+.form-table .placeholder{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    border: 1px dashed #b4b9be;
+    box-sizing: border-box;
+    padding: 9px 0;
+    line-height: 20px;
+}
+.form-table .actions{
+    margin-top: 8px;
+}
+
+.np-clearfix:before,
+.np-clearfix:after {
+    content: '';
+    display: table;
+}
+
+.np-clearfix:after {
+    clear: both;
+}
+
+/*=================================================
+            Multicheckboxes at widget
+=================================================*/
+.mt-multiple-checkbox .mt-single-checkbox p {
+    margin: 4px 0;
+}
+
+.multicheckbox-label {
+    display: block;
+}
+
+.mt-multiple-checkbox {
+    max-height: 150px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    list-style: none;
+}

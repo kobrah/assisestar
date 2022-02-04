@@ -1,0 +1,1224 @@
+/*
+Theme Name:     News Portal Pro
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+*/
+/*--------------------------------------------------------------
+Reset
+--------------------------------------------------------------*/
+
+caption,
+th,
+td {
+    text-align: right;
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Elements
+--------------------------------------------------------------*/
+
+ul,
+ol {
+    margin: 0 20px 15px 0;
+}
+
+li>ul,
+li>ol {
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Forms
+--------------------------------------------------------------*/
+
+textarea {
+    padding-right: 3px;
+    padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+Links
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    right: 5px;
+    left: auto;
+}
+
+/*--------------------------------------------------------------
+Alignments
+--------------------------------------------------------------*/
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Clearings
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+
+/* Make sure select elements fit in widgets */
+
+.widget_search .search-field {
+    float: right;
+}
+
+.widget_archive a,
+.widget_categories a,
+.widget_recent_entries a,
+.widget_meta a,
+.widget_recent_comments li,
+.widget_rss li,
+.widget_pages li a,
+.widget_nav_menu li a {
+    padding-right: 22px;
+    padding-left: 0;
+}
+
+.widget_archive a::before,
+.widget_categories a::before,
+.widget_recent_entries a::before,
+.widget_meta a::before,
+.widget_recent_comments li::before,
+.widget_rss li:before,
+.widget_pages li a:before,
+.widget_nav_menu li a:before {
+    right: 0;
+    left: auto;
+}
+
+.widget_search .search-field {
+    float: right;
+}
+
+.widget_recent_entries .post-date {
+    padding-right: 24px;
+    padding-left: 0;
+}
+
+.widget_nav_menu .sub-menu {
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.widget_tag_cloud .tagcloud a {
+    margin: 0 0 10px 5px;
+}
+
+/*--------------------------------------------------------------
+Posts and pages
+--------------------------------------------------------------*/
+
+.cat-links {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.edit-link .post-edit-link:before {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+article.hentry .entry-footer>span {
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.posted-on:before {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.cat-links:before {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.comments-link:before {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.byline:before {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.tags-links:before {
+    margin-left: 3px;
+    margin-right: auto;
+}
+
+.post-view:before {
+    margin-left: 3px;
+    margin-right: auto;
+}
+
+.nav-links .nav-previous,
+.nav-links .nav-next {
+    float: right;
+}
+
+.nav-links .nav-next {
+    text-align: left;
+    float: left;
+}
+
+.nav-links .nav-previous a:before {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.nav-links .nav-next a:after {
+    margin-right: 5px;
+    margin-left: auto;
+}
+
+.nav-links .nav-previous,
+.nav-links .nav-next {
+    float: right;
+}
+
+.nav-links .nav-next {
+    float: left;
+}
+
+.entry-thumbnail {
+    float: right;
+}
+
+.entry-excerpt {
+    float: left;
+}
+
+.short-content+.bttn {
+    float: left;
+}
+
+/*--------------------------------------------------------------
+Asides
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Comments
+--------------------------------------------------------------*/
+
+/*Comment Lists*/
+
+.comments-area ol.children {
+    margin: 0 15px 0 0;
+}
+
+.comment-author img {
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.comment-metadata {
+    padding-right: 57px;
+    padding-left: 0;
+}
+
+.comment-content {
+    padding-right: 58px;
+    padding-left: 0;
+}
+
+.commentmetadata {
+    float: left;
+}
+
+#cancel-comment-reply-link:before {
+    margin: 0 20px 0 5px;
+}
+
+/*--------------------------------------------------------------
+Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* Older / Newer Posts Navigation (always hidden) */
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+
+/*--------------------------------------------------------------
+Media
+--------------------------------------------------------------*/
+
+/* Make sure embeds and iframes fit their containers */
+
+/*--------------------------------------------------------------
+Galleries
+--------------------------------------------------------------*/
+
+.gallery {
+    margin-right: -2%;
+    margin-left: auto;
+}
+
+.gallery-item {
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Grid CSS
+--------------------------------------------------------------*/
+
+.mt-column-wrapper {
+    margin-right: -2%;
+    margin-left: auto;
+}
+
+.mt-column-1 {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+.mt-column-2 {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+.mt-column-3 {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+.mt-column-4 {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Sidebar layout css 
+--------------------------------------------------------------*/
+
+#primary,
+.home.blog #primary {
+    float: right;
+}
+
+#secondary,
+.home.blog #secondary {
+    float: left;
+}
+
+.right-sidebar #primary {
+    float: left;
+}
+
+.right-sidebar #secondary {
+    float: right;
+}
+
+/*--------------------------------------------------------------
+COMMON CSS
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Header CSS
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Top Header CSS
+--------------------------------------------------------------*/
+
+.np-top-right-section-wrapper {
+    float: left;
+}
+
+.np-top-right-section-wrapper .date-section {
+    float: right;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.np-top-right-section-wrapper .date-section::before {
+    margin-left: 8px;
+    margin-right: auto;
+}
+
+.top-navigation {
+    float: right;
+}
+
+.top-navigation ul li {
+    border-right: 1px solid #fff;
+    border-left: none;
+}
+
+.np-top-left-section-wrapper {
+    float: right;
+}
+
+.np-top-left-section-wrapper .social-link {
+    float: right;
+}
+
+.np-top-left-section-wrapper .social-link a {
+    margin: 0 10px 0 0;
+}
+
+#masthead .site-branding {
+    float: right;
+}
+
+#masthead .np-header-ads-area {
+    float: left;
+}
+
+/*--------------------------------------------------------------
+## Menu Header CSS
+--------------------------------------------------------------*/
+
+.np-header-menu-wrapper .mt-container::before {
+    right: 50%;
+    margin-right: -480px;
+    left: auto;
+    margin-left: auto;
+}
+
+.np-home-icon a {
+    float: right;
+}
+
+#site-navigation {
+    float: right;
+}
+
+#site-navigation ul li {
+    margin-left: -3px;
+    margin-right: auto;
+}
+
+#site-navigation ul li a {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#site-navigation ul.sub-menu,
+#site-navigation ul.children {
+    right: 0;
+    left: auto;
+}
+
+#site-navigation ul.sub-menu ul,
+#site-navigation ul.children ul {
+    left: -100%;
+    right: auto;
+}
+
+#site-navigation ul li.menu-item-has-children>a:before,
+#site-navigation ul li.page_item_has_children>a:before {
+    left: 10px;
+    right: auto;
+}
+
+#site-navigation ul#primary-menu li.menu-item-has-children a, 
+#site-navigation #primary-menu li.page_item_has_children a {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.home .np-home-icon a::after, .np-home-icon a:hover::after, 
+#site-navigation ul#primary-menu > li:hover > a::after, 
+#site-navigation ul#primary-menu > li.current-menu-item > a::after {
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    left: 50%;
+    right: auto;
+}
+.np-header-menu-wrapper::before,
+.np-header-menu-wrapper::after {
+    right: -5px;
+    left: auto;
+}
+
+.np-header-menu-wrapper::after {
+    right: auto;
+    left: -5px;
+}
+
+.np-header-menu-block-wrap::before,
+.np-header-menu-block-wrap::after {
+    right: -5px;
+    left: auto;
+    border-right: none;
+}
+
+.np-header-menu-block-wrap::after {
+    right: auto;
+    left: -5px;
+}
+
+/*--------------------------------------------------------------
+## Header Search CSS
+--------------------------------------------------------------*/
+
+.np-header-search-wrapper {
+    float: left;
+}
+
+.np-header-search-wrapper .search-form-main {
+    left: 0;
+    right: auto;
+}
+
+.np-header-search-wrapper .search-form-main:before {
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    left: 15px;
+    right: auto;
+}
+
+.np-header-search-wrapper .search-form-main .search-field {
+    float: right;
+}
+
+.np-header-search-wrapper .search-form-main .search-submit {
+    float: right;
+}
+
+.menu-toggle {
+    float: right;
+}
+
+/*--------------------------------------------------------------
+## Header layout 2 CSS
+--------------------------------------------------------------*/
+#masthead.layout1 .np-home-icon {
+    float: right;
+}
+
+#masthead.layout1 .np-header-menu-wrapper {
+    float: left !important;
+}
+
+#masthead.layout1 .search-main {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Header Layout 2 CSS
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Ticker CSS
+--------------------------------------------------------------*/
+
+.ticker-caption {
+    float: right;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.ticker-content-wrapper {
+    float: right;
+}
+
+.ticker-content-wrapper .post-cats-list {
+    float: right;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.np-ticker-block .lSAction {
+    left: 10px;
+    right: auto;
+}
+
+.np-ticker-block .lSAction > a {
+    float: left;
+}
+
+.post-cats-list a {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.layout1-ticker .lSSlideOuter.vertical .lSAction > a {
+    margin-right: 0;
+    margin-left: -4px;
+}
+
+.layout1-ticker .ticker-caption:after {
+    border-right: 8px solid #f54337;
+    left: -8px;
+    right: auto;
+    border-left: none;
+}
+
+/*--------------------------------------------------------------
+Slider CSS
+--------------------------------------------------------------*/
+
+.news_portal_featured_slider .np-featured-slider-section {
+    float: right;
+}
+
+.np-slide-content-wrap,
+.news_portal_fullwidth_posts .np-single-post .np-post-content,
+.news_portal_block_posts .layout3 .np-primary-block-wrap .np-single-post .np-post-content,
+.news_portal_list_posts .first-post .np-post-content,
+.news_portal_featured_posts .layout2 .featured-middle-section .np-single-post .np-post-content,
+.news_portal_carousel .np-single-post .np-post-content {
+    right: 0;
+    left: auto;
+}
+
+.np-slide-content-wrap .np-post-meta > span,
+.news_portal_featured_posts .np-single-post .np-post-meta > span,
+.news_portal_list_posts .np-single-post .np-post-meta > span,
+.news_portal_featured_posts .layout2 .featured-middle-section .np-single-post .np-post-meta > span,
+.news_portal_carousel .np-single-post .np-post-meta > span {
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.news_portal_featured_slider .np-featured-slider-section .lSAction,
+.news_portal_slider .np-slider .lSAction {
+    left: 20px;
+    right: auto;
+}
+
+.news_portal_featured_slider .lSAction > a {
+    float: left;
+}
+
+.news_portal_featured_slider .lSSlideOuter .lSPager.lSpg,
+.news_portal_slider .np-slider .lSSlideOuter .lSPager.lSpg {
+    right: 20px;
+    left: auto;
+}
+
+.news_portal_featured_slider .np-featured-section {
+    float: left;
+}
+
+.news_portal_featured_slider .np-featured-section .np-single-post-wrap {
+    float: right;
+    padding-right: 5px;
+    padding-left: 0;
+}
+
+.news_portal_featured_slider .np-featured-section .np-single-post .np-post-content,
+.news_portal_featured_posts .layout2 .featured-right-section .np-single-post .np-post-content,
+.news_portal_featured_posts .layout2 .featured-left-section .np-single-post .np-post-content {
+    right: 0;
+    left: auto;
+}
+
+.news_portal_featured_slider .np-featured-section .featured-bottom-section .np-single-post-wrap {
+    float: right;
+}
+
+/*--------------------------------------------------------------
+Feature Post Widget CSS
+--------------------------------------------------------------*/
+
+.news_portal_featured_posts .layout1 .np-featured-posts-wrapper {
+    margin-right: -2%;
+    margin-left: auto;
+}
+
+.news_portal_featured_posts .layout1 .np-single-post-wrap {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+.news_portal_featured_posts .layout1 .np-single-post .np-post-content {
+    float: right;
+}
+
+.news_portal_featured_posts .layout1 .np-single-post-wrap .np-post-thumb {
+    float: right;
+}
+
+.news_portal_featured_posts .layout1 .np-single-post-wrap .np-post-content {
+    float: right;
+    margin-right: 4%;
+    margin-left: auto;
+}
+
+.news_portal_featured_posts .layout2 .featured-right-section,
+.news_portal_featured_posts .layout2 .featured-left-section, 
+.news_portal_featured_posts .layout2 .featured-middle-section {
+    float: right;
+}
+
+.news_portal_featured_posts .layout2 .featured-left-section {
+    float: left;
+}
+
+.news_portal_featured_posts .layout2 .featured-middle-section {
+    margin-right: 1%;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Block Post Widget CSS
+--------------------------------------------------------------*/
+
+.np-home-middle-section .middle-primary,
+.np-home-bottom-section .bottom-primary {
+    float: right;
+}
+
+.np-home-middle-section .middle-aside,
+.np-home-bottom-section .bottom-aside {
+    float: left;
+}
+
+.np-block-title,
+.widget-title,
+.page-header .page-title,
+.np-related-title,
+.np-post-review-section-wrapper .review-title,
+.np-pnf-latest-posts-wrapper .section-title {
+    border-right: none;
+    border-left: none;
+    text-align: right;
+}
+
+.news_portal_block_posts .np-primary-block-wrap {
+    float: right;
+}
+
+.news_portal_block_posts .np-secondary-block-wrap {
+    float: left;
+}
+
+.np-post-meta > span {
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.np-secondary-block-wrap .np-post-thumb,
+.news_portal_default_tabbed .np-post-thumb {
+    float: right;
+}
+
+.np-secondary-block-wrap .np-post-content,
+.news_portal_default_tabbed .np-post-content {
+    float: left;
+}
+
+.news_portal_block_posts .layout2 .np-primary-block-wrap,
+.news_portal_block_posts .layout2 .np-secondary-block-wrap {
+    margin-right: -3%;
+    margin-left: auto;
+}
+
+.news_portal_block_posts .layout2 .np-primary-block-wrap .np-single-post,
+.news_portal_block_posts .layout2 .np-secondary-block-wrap .np-single-post {
+    margin-right: 3%;
+    margin-left: -4px;
+}
+
+.news_portal_block_posts .layout3 .np-secondary-block-wrap {
+    margin-right: -2%;
+    margin-left: auto;
+}
+
+.news_portal_block_posts .layout3 .np-secondary-block-wrap .np-single-post {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Featured Widget CSS
+--------------------------------------------------------------*/
+
+.middle-primary .news_portal_featured_posts .layout1 .np-single-post-wrap {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+.middle-primary .news_portal_featured_posts .layout1 .np-featured-posts-wrapper {
+    margin-right: -2%;
+    margin-left: auto;
+}
+
+.news_portal_default_tabbed ul.widget-tabs li {
+    margin-left: -4px;
+    margin-right: auto;
+}
+
+.news_portal_default_tabbed ul.widget-tabs li.ui-tabs-active:before,
+.news_portal_default_tabbed ul.widget-tabs li:hover:before {
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    right: 50%;
+    left: auto;
+}
+
+.news_portal_default_tabbed .np-post-meta span {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.news_portal_default_tabbed #comments ul .np-comment-avatar {
+    float: right;
+}
+
+.news_portal_default_tabbed #comments ul .np-comment-desc-wrap {
+    float: left;
+}
+
+/*--------------------------------------------------------------
+Carousel Widget CSS
+--------------------------------------------------------------*/
+
+.news_portal_carousel .carousel-nav-action {
+    left: 0;
+    right: auto;
+}
+
+.news_portal_carousel .carousel-nav-action .carousel-controls {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Recent Post Widget CSS
+--------------------------------------------------------------*/
+
+.news_portal_recent_posts .np-recent-posts-wrapper .np-post-thumb {
+    float: right;
+}
+
+.news_portal_recent_posts .np-recent-posts-wrapper .np-post-content {
+    float: right;
+    margin-right: 4%;
+    margin-left: auto;
+}
+
+.news_portal_social_media .social-link a {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+List post Widget CSS
+--------------------------------------------------------------*/
+
+.news_portal_list_posts .np-single-post .np-post-thumb {
+    float: right;
+}
+
+.news_portal_list_posts .np-single-post  .np-post-content {
+    float: left;
+}
+
+.news_portal_list_posts .layout3 .np-single-post {
+    margin-right: 3%;
+    margin-left: -4px;
+}
+
+.news_portal_list_posts .layout3 .np-list-posts-wrapper {
+    margin-right: -3%;
+    margin-left: auto;
+}
+
+.news_portal_list_posts .alternate-img .np-single-post:nth-child(2n) .np-post-thumb {
+    float: left;
+}
+
+.news_portal_list_posts .alternate-img .np-single-post:nth-child(2n) .np-post-content {
+    float: right;
+}
+
+.single-layout2 .np-post-content-wrapper .postmeta {
+    float: right;
+}
+
+.single-layout2 .np-post-content-wrapper .entry-content {
+    float: left;
+}
+
+.single-layout3 .entry-header {
+    right: 0;
+    left: auto;
+}
+
+/*--------------------------------------------------------------
+Review Widget CSS
+--------------------------------------------------------------*/
+
+.news_portal_review_posts .np-post-thumb {
+    float: right;
+}
+
+.news_portal_review_posts .np-post-content {
+    float: left;
+}
+
+/*--------------------------------------------------------------
+Full Width Widget CSS
+--------------------------------------------------------------*/
+
+.news_portal_fullwidth_posts .np-fullwidth-grid-wrapper {
+    margin-right: -2%;
+    margin-left: auto;
+}
+
+.news_portal_fullwidth_posts .np-single-post {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Footer CSS
+--------------------------------------------------------------*/
+
+#colophon.np-widget-bg-img::after {
+    right: 0;
+    left: auto;
+}
+
+#top-footer .np-footer-widget-wrapper {
+    margin-right: -2%;
+    margin-left: auto;
+}
+
+#top-footer.footer_column_one .np-footer-widget,
+#top-footer.footer_column_two .np-footer-widget,
+#top-footer.footer_column_three .np-footer-widget,
+#top-footer.footer_column_four .np-footer-widget {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+.site-info {
+    float: right;
+}
+
+#footer-navigation ul {
+    float: left;
+}
+
+#footer-navigation ul li a {
+    border-right: 2px solid #7f7f7f;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 0;
+    margin-left: auto;
+    border-left: none;
+}
+
+#footer-navigation ul li:first-child a {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+Archive CSS
+--------------------------------------------------------------*/
+
+.np-archive-post-content-wrapper:before {
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    right: 20px;
+    left: auto;
+}
+
+.entry-meta span {
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.entry-meta span.vcard {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.np-archive-more .np-button i {
+    margin-left: 8px;
+    margin-right: auto;
+}
+
+.np-archive-grid-post-wrapper article {
+    margin-right: 3%;
+    margin-left: -4px;
+}
+
+.np-archive-grid-post-wrapper {
+    margin-right: -3%;
+    margin-left: auto;
+}
+
+.np-related-section-wrapper .np-single-post {
+    float: right;
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+.np-related-posts-wrap {
+    margin-right: -2%;
+    margin-left: auto;
+}
+
+.archive-list .np-article-thumb {
+    float: right;
+}
+
+.archive-list .np-archive-post-content-wrapper {
+    float: left;
+}
+
+/*--------------------------------------------------------------
+Author css 
+--------------------------------------------------------------*/
+
+.np-author-box-wrapper .author-avatar {
+    float: right;
+}
+
+.np-author-box-wrapper .author-desc-wrapper {
+    float: left;
+}
+
+/*--------------------------------------------------------------
+Post Format css 
+--------------------------------------------------------------*/
+
+.format-video:before,
+.format-audio:before,
+.format-gallery:before {
+    right: 0;
+    left: auto;
+}
+
+/*--------------------------------------------------------------
+Error 404 css 
+--------------------------------------------------------------*/
+
+.pnf-extra .pnf-button.btn {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pnf-extra .np-single-post {
+    margin: 0 2% 2% -4px;
+}
+
+.np-pnf-latest-posts-wrapper {
+    margin-right: -2%;
+    margin-left: auto;
+}
+
+.np-pnf-latest-posts-wrapper .section-title {
+    margin-right: 2%;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+scroll to top css 
+--------------------------------------------------------------*/
+
+#np-scrollup {
+    left: 20px;
+    right: auto;
+}
+
+/**
+ * additional css for lazy load
+ */
+
+/*--------------------------------------------------------------
+Breadcrumb  css 
+--------------------------------------------------------------*/
+
+.np-breadcrumbs {
+    border-right: 5px solid #f54337;
+    border-left: none;
+}
+
+/*--------------------------------------------------------------
+Review Designs
+--------------------------------------------------------------*/
+
+.review-content-wrapper .stars-count,
+.review-content-wrapper .review-percent {
+    border-right: 1px solid #e1e1e1;
+    float: left;
+    padding: 5px 20px 5px 0;
+    border-left: none;
+}
+
+.review-content-wrapper .review-percent {
+    padding: 5px 36px 5px 19px;
+}
+
+.review-content-wrapper .review-featured-name {
+    float: right;
+}
+
+.review-content-wrapper .sum-title-detail-wrap {
+    float: right;
+}
+
+.review-content-wrapper .total-review-wrapper {
+    border-right: 1px solid #e1e1e1;
+    left: 0;
+    right: auto;
+    border-left: none;
+}
+
+/*--------------------------------------------------------------
+Woocommerce styles
+--------------------------------------------------------------*/
+
+.woocommerce .price-cart {
+    padding: 0 10px 0 0;
+}
+
+.woocommerce .price-cart:after {
+    right: 0;
+    left: auto;
+}
+
+.woocommerce ul.products li.product .price-cart .button {
+    float: left;
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.woocommerce ul.products li.product .price-cart .button:before {
+    right: 10px;
+    left: auto;
+}
+
+.woocommerce ul.products li.product .price del {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.woocommerce ul.products li.product .price-cart .price {
+    float: right;
+}
+
+.added_to_cart.wc-forward {
+    margin-right: 5px;
+    margin-left: auto;
+}
+
+.woocommerce-product-search .search-field {
+    border-left: medium none;
+    margin-left: -4px;
+    margin-right: auto;
+    border-right: none;
+}
+
+.woocommerce ul.products li.product .onsale,
+.woocommerce span.onsale {
+    left: 0px;
+    right: auto;
+}
+
+.woocommerce .product-categories .children {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.woocommerce .product-categories li a {
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+.woocommerce .product-categories > li > a:before,
+.woocommerce .product-categories .children a:before {
+    right: 0;
+    left: auto;
+}
+
+.woocommerce div.product p.price del {
+    float: right;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.woocommerce table.shop_table td,
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table tbody th,
+.woocommerce table.shop_table tfoot td,
+.woocommerce table.shop_table tfoot th {
+    border-left: none;
+    border-right: none;
+}
+
+.woocommerce .shop_table tbody tr td:first-child,
+.woocommerce .shop_table thead tr th.product-remove,
+.woocommerce table.shop_table tfoot td:first-child,
+.woocommerce table.shop_table tfoot th:first-child {
+    border-right: medium none;
+    border-left: none;
+}
+
+/*--------------------------------------------------------------
+Hover styles
+--------------------------------------------------------------*/
+
+.np-image-shine .np-post-thumb figure:after,
+.np-image-shine .np-slide-thumb:after {
+    right: 0px;
+    left: auto;
+}
+
+.np-image-slanted_shine .np-post-thumb figure:after,
+.np-image-slanted_shine .np-slide-thumb:after {
+    right: -100%;
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    left: auto;
+}
+
+.np-image-circle .np-post-thumb figure:after,
+.np-image-circle .np-slide-thumb:after {
+    right: 50%;
+    left: auto;
+}
+
+.np-top-left-section-wrapper .date-section::before {
+    margin-right: 0;
+    margin-left: 10px;
+}

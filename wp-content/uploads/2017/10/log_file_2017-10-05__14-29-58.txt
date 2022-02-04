@@ -1,0 +1,79 @@
+
+---Upload files---
+Redux file was not uploaded. Error: File is empty. Please upload something more substantial.
+
+---Upload files---
+The import files were successfully uploaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://demo.mysterythemes.com/news-portal-pro-sports
+Data file = /home2/mysterytheme/public_html/demo/wp-content/uploads/sites/17/2017/10/editorialprosport.wordpress.2017-10-05.xml
+Widget file = /home2/mysterytheme/public_html/demo/wp-content/uploads/sites/17/2017/10/demo.mysterythemes.com-editorial-pro-sport-widgets.wie
+Customizer file = /home2/mysterytheme/public_html/demo/wp-content/uploads/sites/17/2017/10/editorial-pro-export1.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Recent Comments - No Title - Widget already exists
+Archives - No Title - Widget already exists
+Categories - No Title - Widget already exists
+Meta - No Title - Widget already exists
+
+Header Ads : 
+
+Editorial: Ads Banner - No Title - Imported
+
+HomePage Slider Area : 
+
+Editorial : Carousel - No Title - Imported
+
+HomePage Top Content Area : 
+
+Editorial: Block Posts (List) - No Title - Imported
+
+HomePage Top Sidebar Area : 
+
+Editorial: Block Posts (Column) - No Title - Imported
+
+HomePage Top Fullwidth Area : 
+
+Editorial: Ads Banner - No Title - Imported
+
+HomePage Bottom Content Area : 
+
+Editorial: Block Posts (Column) - No Title - Imported
+
+HomePage Bottom Sidebar Area : 
+
+Editorial: Show Video - No Title - Imported
+Editorial: Ads Banner - No Title - Imported
+Categories - No Title - Imported
+
+HomePage Bottom Fullwidth Area : 
+
+Editorial: Block Posts (Grid) - No Title - Imported
+
+Footer 1st Column : 
+
+Meta - No Title - Imported
+
+Footer 2nd Column : 
+
+Custom Menu - Custom Menu - Imported
+
+Footer 3rd Column : 
+
+Editorial: Posts Lists - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
